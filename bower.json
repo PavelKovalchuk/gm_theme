@@ -1,0 +1,23 @@
+{
+  "name": "greenmarket_blog_2017",
+  "description": "WP theme",
+  "main": "index.js",
+  "authors": [
+    "Acceptic"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "3.*",
+    "bootstrap": "4.0.0-alpha.6",
+    "imagesloaded": "^4.1.3"
+  }
+}

@@ -1,0 +1,18 @@
+
+
+.relap-default__top-container.relap-default-column-quantity-3 .relap-default__item,
+.relap-default__top-container.relap-default-column-quantity-3 .relap-default__fake-item,
+.relap-default__top-container.relap-default__has-composite-grid .relap-default__items-simple-grid.relap-default-column-quantity-3 .relap-default__item,
+.relap-default__top-container.relap-default__has-composite-grid .relap-default__items-simple-grid.relap-default-column-quantity-3 .relap-default__fake-item{
+
+  @include media-breakpoint-down(lg) {
+    width: 50% !important;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 100% !important;
+    display: block;
+    margin: auto;
+  }
+
+}

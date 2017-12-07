@@ -1,0 +1,188 @@
+.callback-modal-form{
+  .modal-dialog{
+
+    width: 706px;
+    max-width: 100%;
+
+    @include media-breakpoint-down(sm) {
+
+      width: 500px;
+
+    }
+
+    @include media-breakpoint-down(xs) {
+
+      width: 300px;
+      margin: 20px auto;
+
+    }
+
+  }
+
+  .table td, .table th{
+    border-top: none;
+
+    @include media-breakpoint-down(sm) {
+
+      width: 100%;
+      display: block;
+
+    }
+  }
+
+  .modal-header{
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .connect-box-but,
+  .connect-box-but-center{
+    //display: none;
+  }
+
+  .connect-box-but-center{
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .connect-box-but{
+    float: right;
+    text-align: right;
+    cursor: pointer;
+
+    &:hover{
+     //border: 2px solid $gm-red;
+    }
+
+  }
+
+  .dialog-box-cancel{
+    display: none;
+  }
+
+  .table td, .table th{
+    padding: 0;
+  }
+
+  .connect-box-txt {
+    padding: 0 32px;
+    font-size: 1.3rem;
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+
+      padding: 0;
+
+    }
+  }
+
+  .connect-box-head, .save-cart-box-head {
+    color: $gm-green;
+  }
+
+  .connect-box-head {
+    margin: 35px 0;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  #connect-box table {
+    margin-left: 95px;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .connect-box-fld-inf {
+    float: left;
+    font-size: 15px;
+  }
+
+  .connect-box-fld-inf span {
+    color: rgb( 222, 41, 89 );
+  }
+
+  #connect-box-inp{
+    width: 492px;
+    margin: auto;
+
+    @include media-breakpoint-down(sm) {
+
+      width: 100%;
+
+    }
+
+    input, textarea{
+      width: 341px;
+      margin: 4px 0;
+      border: 1px solid rgba( 149, 149, 149, 0.5 );
+      background-color: rgb( 249, 247, 238 );
+      font-size: 18px;
+      height: 31px;
+      padding: 0 10px;
+
+      @include media-breakpoint-down(sm) {
+
+        width: 100%;
+
+      }
+
+    }
+
+    textarea{
+      height: 150px;
+      padding: 10px;
+      resize: none;
+    }
+
+    table tr td:first-child {
+      width: 147px;
+
+      @include media-breakpoint-down(sm) {
+
+        width: 100%;
+
+      }
+    }
+  }
+
+  .connect-box-label{
+    font-weight: 600;
+  }
+
+  .connect-box-foot{
+    float: left;
+    width: 100%;
+
+    .btn-gm{
+      float: right;
+
+      @include media-breakpoint-down(sm) {
+
+        width: 100%;
+
+      }
+
+    }
+
+  }
+
+  .connect-succ-mess, .connect-err-mess {
+    margin: 20px 30px 30px 30px;
+    //font-size: 18px;
+    text-align: center;
+  }
+
+  .connect-succ-mess
+  , .sp-text-big-green{
+    color: $gm-green-strong;
+  }
+
+  .connect-err-mess
+  , .error_field_txt{
+    color: $gm-red;
+  }
+
+
+}

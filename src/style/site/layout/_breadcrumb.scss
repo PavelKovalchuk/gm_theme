@@ -1,0 +1,135 @@
+
+.breadcrumb_container{
+  background-color: $gm-content-bg;
+
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+  }
+
+}
+
+.breadcrumb{
+
+  margin-bottom: $gm-standart-padding-small;
+
+  .breadcrumb-item{
+
+    background-color: $white;
+    height: $gm-breadcrumb-height;
+    margin-left: $gm-breadcrumb-arrow-width;
+    padding-left: $gm-standart-padding-small;
+    position: relative;
+
+    @include media-breakpoint-down(lg) {
+      height: $gm-breadcrumb-height-sm;
+      margin-left: $gm-breadcrumb-arrow-width-sm;
+      padding-right: $gm-standart-padding-small;
+    }
+
+    @include media-breakpoint-down(md) {
+      height: auto;
+      margin-top: 5px;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      margin-top: 5px;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+
+    &+.breadcrumb-item::before{
+
+      content: " ";
+      position: absolute;
+      left: -$gm-breadcrumb-arrow-width;
+      width: $gm-breadcrumb-arrow-width;
+      height: 100%;
+      background: url(build/img//breadcrumb_arrow-min.png) no-repeat;
+
+      @include media-breakpoint-down(lg) {
+        background-size: contain;
+        left: -$gm-breadcrumb-arrow-width-sm;
+      }
+
+      @include media-breakpoint-down(md) {
+        background: none;
+        width: 0;
+        height: 0;
+        left: 0;
+      }
+
+    }
+
+    &:first-of-type{
+
+      margin-left: 0;
+
+    }
+
+    &:last-of-type{
+
+      text-decoration: underline;
+
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      &:after{
+        content: " ";
+        position: absolute;
+        right: -19px;
+        width: 19px;
+        height: 100%;
+        background: url(build/img/breadcrumb_arrow_right.png) no-repeat;
+        display: inline-block;
+        padding-right: 0;
+        padding-left: 0;
+
+
+        @include media-breakpoint-down(lg) {
+          background-size: contain;
+        }
+
+        @include media-breakpoint-down(md) {
+          background: none;
+          width: 0;
+          height: 0;
+          right: 0;
+        }
+
+      }
+
+    }
+
+    a
+    ,span{
+      line-height: $gm-breadcrumb-height;
+      color: $black;
+      font-size: 17px;
+
+      @include media-breakpoint-down(lg) {
+        line-height: $gm-breadcrumb-height-sm;
+      }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 12px;
+      }
+    }
+
+    &:hover{
+
+      a
+      ,span{
+
+        text-decoration: none;
+
+      }
+
+    }
+
+  }
+
+}

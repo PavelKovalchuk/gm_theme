@@ -1,0 +1,115 @@
+
+.pagenavi-outer{
+
+  padding: $gm-standart-padding-largest 0 $gm-standart-padding-largest;
+
+  @include media-breakpoint-down(lg) {
+
+    padding: $gm-standart-padding-big 0 $gm-standart-padding-big;
+
+  }
+
+  .pagenavi{
+
+    @include media-breakpoint-down(xs) {
+      padding-left: $gm-standart-padding-small;
+      padding-right: $gm-standart-padding-small;
+    }
+
+  }
+
+  .page-numbers{
+    height: $gm-pagenavi-height;
+    width: $gm-pagenavi-height;
+    margin-left: $gm-standart-padding-big;
+    font-size: 22px;
+    text-align: center;
+    color: $gm-pagin-numbers;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: color $gm-standart-tansition-duration ease-in, background-color $gm-standart-tansition-duration ease-in ;
+
+    @include media-breakpoint-down(sm) {
+
+      margin-left: $gm-standart-padding-small;
+      height: $gm-pagenavi-height-sm;
+      width: $gm-pagenavi-height-sm;
+      font-size: 17px;
+
+    }
+
+    @include media-breakpoint-down(xs) {
+
+      margin-left: 0px;
+      height: $gm-pagenavi-height-xs;
+      width: $gm-pagenavi-height-xs;
+      font-size: 14px;
+
+
+    }
+
+    &:first-of-type{
+      margin-left: 0;
+    }
+
+    &.page-numbers-simple{
+
+      &:hover{
+
+        background-color: $gm-pagin-numbers;
+        color: $white;
+        transition: color $gm-standart-tansition-duration ease-in, background-color $gm-standart-tansition-duration ease-in ;
+
+        a{
+
+          color: inherit;
+          text-decoration: none;
+
+        }
+
+      }
+
+    }
+
+    &.page-numbers-current{
+
+      background-color: $gm-grey;
+      border: 1px solid transparent;
+      border-radius: 50%;
+
+      .current{
+
+      }
+
+    }
+    
+    a{
+      color: inherit;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      text-align: center;
+      text-decoration: none;
+      width: 100%;
+
+
+    }
+
+
+    &.page-numbers-first-page
+    ,&.prev-page
+    ,&.next-page
+    ,&.page-numbers-last-page{
+
+      @include media-breakpoint-down(xs) {
+       /* width: 50%;
+        margin-left: 0;
+        margin-top: $gm-standart-padding-big;
+        margin-bottom: $gm-standart-padding-big;*/
+
+      }
+
+    }
+
+  }
+
+}

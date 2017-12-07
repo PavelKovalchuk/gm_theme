@@ -1,0 +1,179 @@
+.btn-gm{
+  background-color: $gm-btn-green;
+  position: relative;
+  color: $white;
+  padding: 0.3rem 1rem;
+  font-size: 1.1rem;
+  transition-duration: $gm-standart-tansition-duration;
+  font-family: $font-family-base;
+  border: 2px solid transparent;
+  transition-duration: $gm-standart-tansition-duration;
+
+  &:focus, &:hover{
+
+    color: $white;
+    border: 2px solid $gm-red;
+    transition-duration: $gm-standart-tansition-duration;
+  }
+
+  &:hover{
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+  &:focus{
+    box-shadow: none;
+  }
+
+  @include media-breakpoint-down(sm) {
+
+    width: 100%;
+    padding: .6rem 1rem;
+
+  }
+
+  &.btn-gm-middle{
+    padding: 0.5rem 4rem;
+  }
+
+
+}
+
+.btn-gm-header{
+
+  min-width: $gm-header-elements-width;
+
+}
+
+.btn-gm-red{
+  @extend .btn-gm;
+  background-color: $gm-red;
+
+  &:focus, &:hover{
+
+    cursor: pointer;
+    background-color: $white;
+    color: $gm-red;
+  }
+
+  &:hover{
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+  &:focus{
+    box-shadow: none;
+  }
+
+  &.btn-header-find{
+    height: 34px;
+    border-radius: 0;
+
+    @include media-breakpoint-down(sm) {
+
+     height: auto;
+
+    }
+
+  }
+}
+
+.btn-gm-read-more {
+  @extend .btn-gm;
+
+  background-color: $white;
+  color: $gm-read-more;
+  border: 2px solid $gm-read-more;
+  border-radius: 0;
+
+  &:focus, &:hover{
+
+    cursor: pointer;
+    background-color: $gm-read-more;
+    color: $white;
+  }
+
+  &:hover{
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+  &:focus{
+    box-shadow: none;
+  }
+
+
+
+}
+
+.btn-gm-img{
+
+  padding: .3rem 1rem .3rem 32px;
+
+  &:before{
+
+    background-image:url(build/img/arrow-ok.png);
+    background-repeat:no-repeat;
+    background-position:center center;
+    content:"";
+    width:20px;
+    height:20px;
+    position:absolute;
+    left: 5px;
+    top:50%;
+    margin-top:-9px;
+
+  }
+
+  @include media-breakpoint-down(sm) {
+
+    width: 100%;
+    padding: .6rem 1rem;
+
+  }
+}
+
+.btn-outer{
+  width: 100%;
+  position: relative;
+
+  &.btn-outer-center{
+    text-align: center;
+  }
+
+}
+
+.btn-gm-white{
+  @extend .btn-gm;
+
+  background-color: $white;
+  color: $gm-red;
+  font-weight: 600;
+
+  &:focus, &:hover{
+
+    cursor: pointer;
+    background-color: $gm-green-salat;
+    color: $white;
+  }
+
+  &:hover{
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+  &:focus{
+    box-shadow: none;
+  }
+
+
+}
+
+.btn-gm-subscribe{
+  @extend .btn-gm-white;
+
+  width: 80%;
+  padding: .7rem 1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

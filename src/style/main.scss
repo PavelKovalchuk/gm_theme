@@ -1,0 +1,106 @@
+/*!
+ *
+ * Theme Name: Green Market 2017
+ * Author: Pavel Kovalchuk
+ * Description: Bootstrap 4 WordPress Theme
+ * License: GNU General Public License version 3.0
+ * License URI: http://www.gnu.org/licenses/gpl-3.0.html
+ * Version: 1.0.0
+ * All files, unless otherwise stated, are released under the GNU General Public License
+ * version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
+ *
+ * Coding rules : https://github.com/necolas/idiomatic-css
+ *
+ */
+
+/*
+* Third Party
+*/
+//@import "../../bower_components/normalize.css/normalize.css";
+
+
+/*--------------------------------------------------------------
+# Theme Styles and Layout
+--------------------------------------------------------------*/
+@import "fonts/fonts";
+
+
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+//Bootstrap variables
+//@import "variables";
+
+@import "vars/vars";
+
+/*--------------------------------------------------------------
+# Bootstrap
+--------------------------------------------------------------*/
+
+// Core variables and mixins
+
+@import "mixins";
+@import "custom";
+
+// Reset and dependencies
+@import "normalize";
+@import "print";
+
+// Core CSS
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+
+// Components
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "responsive-embed";
+@import "close";
+
+// Components w/ JavaScript
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+
+// Utility classes
+@import "utilities";
+
+//OR
+
+//@import "bootstrap";
+
+/*--------------------------------------------------------------
+# Theme Styles and Layout
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+/*--------------------------------------------------------------
+# Custom
+--------------------------------------------------------------*/
+
+@import "customization/app";

@@ -1,0 +1,75 @@
+
+.js-share-parent{
+
+
+  .post-share-block{
+
+    display: none;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 240px;
+    padding: $gm-standart-padding-small 0;
+    height: 50px;
+    background-color: $gm-image-caption;
+    transition: background-color $gm-standart-tansition-duration ease-in ;
+
+    &.share-shown{
+      display: flex;
+
+      background-color: $gm-green-blured;
+      transition: background-color $gm-standart-tansition-duration ease-in ;
+    }
+
+    &.archive-share-buttons{
+      width: calc(100% - 30px);
+
+      .share-item{
+        margin-left: $gm-standart-padding-small;
+      }
+
+    }
+
+
+    .share-item{
+
+      //margin-left: $gm-standart-padding-small;
+
+      .fb_iframe_widget{
+        display: flex !important;
+      }
+
+
+
+    }
+
+  }
+
+  .share-item-btn{
+
+    &:hover{
+      cursor: pointer;
+    }
+
+  }
+
+  &.inner-article-image{
+
+    .post-share-block{
+
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 0 $gm-standart-padding-small;
+
+    }
+
+  }
+
+
+
+}
+

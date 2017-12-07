@@ -1,0 +1,2 @@
+2017-12-06 12:48:08: DONE: category_sidebar_template
+2017-12-06 12:48:08: DONE: category_footer_template

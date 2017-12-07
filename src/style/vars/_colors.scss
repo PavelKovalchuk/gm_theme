@@ -1,0 +1,131 @@
+/*--------------------------------------------------------------
+# Theme Colors
+--------------------------------------------------------------*/
+$gm-green: #9bbf36;
+$gm-green-light: #bde44d;
+$gm-green-strong: #659445;
+$gm-green-salat: #83b22a;
+$gm-green-1: #daecc4;
+$gm-green-2: #427a00;
+$gm-green-3: #7ab10b;
+
+$gm-green-blured: rgba(155, 191, 54, 0.5);
+
+
+//$gm-red: #c02d59;
+$gm-red: #bf2d58;
+$gm-red-light: #da567d;
+$gm-red-strong: rgb( 191, 45, 88 );
+
+
+$gm-grey: #e9e4d9;
+$gm-grey-light: #bcb29b;
+$gm-grey-strong: #6d644f;
+$gm-grey-white: #f5f2ec;
+$gm-grey-brown: #bcb39b;
+$gm-grey-beige: #e7e1d3;
+$gm-grey-muted: rgba(243, 239, 239, 0.5);
+
+
+
+$gm-input-border: rgb( 152, 165, 102 );
+$gm-input-bg: rgb( 248, 247, 238 );
+
+$gm-beige: rgb( 233, 228, 217 );
+
+//Category colors
+$cat-bf-bez-rubriki: $gm-grey-beige;
+$cat-bg-besedka: #00c1d2;
+$cat-bg-sadoviy-calendar: #ffb400;
+$cat-bg-plodoviy-sad: #ff3000;
+$cat-bg-na-zdorovie: #6ab400;
+$cat-bg-cvetnik: #fd134f;
+$cat-bg-landshaftniy-disain: #009014;
+$cat-bg-plants-protect: #002180;
+$cat-bg-zaschita-rasteniy: #002180;
+$cat-bg-na-podokonnike: #06938b;
+$cat-bg-masterskaya: #ff7800;
+$cat-bg-sprosi-biologa: #adb300;
+$cat-bg-interview: #425336;
+
+
+
+
+$gm-btn-green: $gm-green-3;
+$gm-category-bg: $gm-grey-light;
+$gm-category-color: $gm-grey-strong;
+$gm-footer-bg: $gm-beige;
+$gm-content-bg: $gm-grey-white;
+$gm-sidebar-title: $gm-grey-brown;
+$gm-sidebar-cat-item: $gm-grey-beige;
+$gm-sidebar-cat-item-hover: $gm-green-salat;
+$gm-entry-page-bg: $gm-green-salat;
+$gm-read-more: $gm-red-strong;
+$gm-pagin-numbers: $gm-green-2;
+$gm-image-caption: $gm-grey-muted;
+
+
+/*--------------------------------------------------------------
+# Default Bootstrap Colors
+--------------------------------------------------------------*/
+ $white:  #fff !default;
+ $gray-100: #f8f9fa !default;
+ $gray-200: #e9ecef !default;
+ $gray-300: #dee2e6 !default;
+ $gray-400: #ced4da !default;
+ $gray-500: #adb5bd !default;
+ $gray-600: #868e96 !default;
+ $gray-700: #495057 !default;
+ $gray-800: #343a40 !default;
+ $gray-900: #212529 !default;
+ $black:  #000 !default;
+
+ $grays: (
+   100: $gray-100,
+   200: $gray-200,
+   300: $gray-300,
+   400: $gray-400,
+   500: $gray-500,
+   600: $gray-600,
+   700: $gray-700,
+   800: $gray-800,
+   900: $gray-900
+ ) !default;
+
+// $blue:    #007bff !default;
+// $indigo:  #6610f2 !default;
+// $purple:  #6f42c1 !default;
+// $pink:    #e83e8c !default;
+// $red:     #dc3545 !default;
+// $orange:  #fd7e14 !default;
+// $yellow:  #ffc107 !default;
+// $green:   #28a745 !default;
+// $teal:    #20c997 !default;
+// $cyan:    #17a2b8 !default;
+
+// $colors: (
+//   blue: $blue,
+//   indigo: $indigo,
+//   purple: $purple,
+//   pink: $pink,
+//   red: $red,
+//   orange: $orange,
+//   yellow: $yellow,
+//   green: $green,
+//   teal: $teal,
+//   cyan: $cyan,
+//   white: $white,
+//   gray: $gray-600,
+//   gray-dark: $gray-800
+// ) !default;
+
+// $theme-colors: (
+//   primary: $blue,
+//   secondary: $gray-600,
+//   success: $green,
+//   info: $cyan,
+//   warning: $yellow,
+//   danger: $red,
+//   light: $gray-100,
+//   dark: $gray-800
+// ) !default;

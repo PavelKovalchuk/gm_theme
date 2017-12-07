@@ -1,0 +1,33 @@
+.social-links-img{
+
+  display: inline-block;
+  width: 27px;
+  height: 30px;
+  background-repeat: no-repeat;
+
+  &.social-fb{
+    background-image: url(build/img/ft_fb.png);
+
+    &:hover{
+      background-image: url(build/img/ft_fb_hov.png);
+    }
+
+  }
+
+  &.social-twitter{
+    background-image: url(build/img/ft_tw.png);
+
+    &:hover{
+      background-image: url(build/img/ft_tw_hov.png);
+    }
+  }
+
+  &.social-google{
+    background-image: url(build/img/ft_gpl.png);
+
+    &:hover{
+      background-image: url(build/img/ft_gpl_hov.png);
+    }
+  }
+
+}
